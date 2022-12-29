@@ -1,0 +1,86 @@
+body 
+{
+  background-image: url('./altimit.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+	font-family: sans-serif;
+}
+div.dblock
+{
+	position: absolute;
+	background:rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+}
+#panel1
+{
+	font-size: 150%;
+	width: 90%;
+	top: 2%;
+	left: 5%;
+}
+#panel2
+{
+	text-align: center;
+	font-size: 1.5vw;
+	height: 27vw;
+	width: 20%;
+	top: 0.75in;
+	left: 5%;
+}
+#panel3
+{
+	overflow: auto;
+	height: 27vw;
+	width: 69%;
+	top: 0.75in;
+	left: 26%;
+}
+#panel4
+{
+	overflow: auto;
+	width: 90%;
+	left: 5%;
+	top: calc(.75in + 28vw);
+	height: calc(90% - .75in - 28vw)
+}
+#panel5
+{
+	width: 90%;
+	left: 5%;
+	top: 92%;
+}
+#headshot
+{
+	display: block;
+	margin: auto;
+	border-radius: 5%;
+  	width: 85%;
+	margin-top: 5%;
+	top: 5%;
+}
+.btext
+{
+	margin-left: 2%;
+	margin-top: 2%;
+}
+#quote
+{
+	font-style: italic;
+	top: 95%;
+	width: 90%;
+	left: 5%;
+}
+tr
+{
+	height:25;
+	text-align: center;
+}
+tr:nth-child(even) {
+  background-color: rgba(255, 100, 0, 0.2);
+}
+table
+{
+	margin-top: 10px;
+	width: 100%;
+}
