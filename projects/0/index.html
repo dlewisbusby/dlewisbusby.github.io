@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Busby's Game of Life</title>
+<link href="life.css" type="text/css" rel="stylesheet"> <!-- CSS SHEET! -->
+<script src="toolbar.js"></script> <!-- TOOLBAR JS -->
+</head>
+<body>
+<div id="viewport"> <!-- VIEWPORT -->
+<div id="outwrapper">
+<div id="inwrapper">
+<table cellspacing=0 id="grid">  <!-- The whole viewport is literally this one table. Javascript adds in all of the actual contents. :^) -->
+</table>
+</div></div></div>
+<div id="toolbar"> <!-- TOOLBAR -->
+<div class="bar"> <!-- This is toolbar subsection 7: Information -->
+<h2><i>Busby's Game of Life</i></h2>
+<a href="http://www.cs.gsu.edu/" target="_blank">Georgia State University</a><br>
+<a href="http://codd.cs.gsu.edu/~dbusby1/index.html" target="_blank">Daniel's Homepage</a><br>
+© 2021 by Daniel Busby
+</div>
+<div class="bar"> <!-- This is toolbar subsection 1, Game Controls -->
+<form name="newgame" onsubmit="return newGame()">
+<h4>New Game:</h4>
+# of Rows: <input type="number" name="rows" value="25"><br>
+# of Columns: <input type="number" name="cols" value="25"><br>
+Population: <input type="number" name="pop" value="100"><br>
+<input type="submit" value="Let's Go!">
+</form>
+</div>
+<div class="bar"> <!-- This is toolbar subsection 2: Time Controls -->
+<h4>Time Controls:</h4>
+<input type="button" class="time" onclick="makeGo()" value="▶">
+<input type="button" class="time" onclick="makePause()" value="⏸">
+<form name="skipf" onsubmit="return skip()">
+Skip Gens: <input type="number" name="gens" value="1">
+<input type="submit" value="⏭">
+</form>
+<form name="ffwd" onsubmit="return fastForward()">
+Timescale: <input type="range" min="1" max="40" value="10" name="timescale">
+<input type="submit" value="▶">
+</form>
+</div>
+<div class="bar"> <!-- This is toolbar subsection 3: Viewport Controls -->
+<h4>Viewport Controls:</h4>
+<form name="view" onsubmit="return viewport()">
+Alive Color:<input type="color" name="color1" value="#ff0000"><br>
+Dead Color:<input type="color" name="color2" value="#808080"><br>
+Zoom: <input type="range" min="1" max="30" value="10" name="zoom">
+<input type="submit" value="🔍"><br>
+</form>
+</div>
+<div id="bdata" class="bar"> <!-- This is toolbar subsection 4: Game Data -->
+<h4>Game Data:</h4>
+<div id="data1">Generation:<br>Population:</div>
+<div id="data2"><div class="data" id="dgen">0</div><br><div class="data" id="dpop">0</div></div>
+</div>
+<div class="bar"> <!-- This is toolbar subsection 5: Pattern Insertion -->
+<h4>Insert Pattern:</h4>
+<form name="ipatts" onsubmit="return insertPattern()">
+Row: <input type="number" name="irow" value="1"><br>
+Column: <input type="number" name="icol" value="1"><br>
+Type: <select name="pattern" id="bpatt">
+<option value="bee">Beehive</option>
+<option value="pulsar">Pulsar</option>
+<option value="glider">Glider</option>
+<option value="gun">Gun</option>
+</select><br>
+<input type="submit" value="Insert">
+</form>
+</div>
+<div class="bar"> <!-- This is toolbar subsection 6: Save States -->
+<h4>Local Save States:</h4>
+<form name="svst" onsubmit="return saveState()">
+Save State: <input type="number" name="grno" value="1">
+<input type="submit" value="Save">
+</form>
+<form name="ldst" onsubmit="return loadState()">
+Load State: <input type="number" name="grno" value="1">
+<input type="submit" value="Load">
+</form>
+</div>
+<div class="bar"> <!-- This is toolbar subsection 6: Save States -->
+<h4>Server Save States:</h4><br>
+<i>(Login to save states to server)</i>
+</div>
+</div><div id="account"> <!-- ACCOUNT -->
+<h4>User Account:</h4>
+<a href="login.php">
+<input type="button" class="login" value="Login">
+</a>
+<a href="signup.php">
+<input type="button" class="login" value="Signup">
+</a>
+</div>
+</body>
+</html>

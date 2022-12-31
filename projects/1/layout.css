@@ -1,0 +1,107 @@
+
+div.wrapper{display: block; width: 100%; margin: 0; text-align: left;}
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{padding: 0 0 8px 0; font-size: 20px; border-bottom: 1px dotted white;}
+.row1{
+	padding-top: 50px;
+  color:#FFFFFF;
+
+  border-top: 5px solid #333333;
+}
+#header, #intro, #content, #contentHEADER, #footer, #copyright{display: block; position: relative; width: 960px; margin: 0 auto;}
+#header{padding: 10px 0 20px 0; z-index: 1000; color:#444444;}
+#header #logo{display: block; float: left; margin-top: 8px;}
+#header h1, #header p{margin: 0; padding: 0;}
+#header h1{margin: 0; padding: 0; font-size: 50px; border: none;}
+#header h1 a{color:#333333; background-color:#A3BCB6;}
+#slogan {
+  font-size: 2em;
+}
+
+#intro{padding: 30px 0;}
+.wrapper #intro li.last{margin: 0;}
+#intro h1, #intro h2, #intro p, #intro ul{margin: 0; padding: 0; list-style: none; line-height: normal; border: none;}
+#intro .fl_left{display: block; float: left; width: 500px;}
+#intro .fl_left h1{margin-bottom: 20px; font-size: 42px; color:#FFFFFF; border: none;}
+#intro .fl_right img{display: block; width: 420px; height: 320px;}
+#makebigger {
+  font-size: 20px;
+}
+
+#contentHEADER{padding: 5px 0;}
+#contentHEADER ul{margin: 0; padding: 0; list-style: none;}
+#contentHEADER {
+  overflow: hidden;
+}
+
+#content {padding: 20px 0;}
+#content a{color:#FF9900; background-color:#FFFFFF;}
+#content .contentRIGHT{display: block;float: right; width: 495px;}
+
+.footerLEFT{display: block; float: left; width: 300px; margin: 0 0 0 15px; padding: 0;}
+.footerRIGHT{display: block; float: right; width: 150px;}
+#content {
+  overflow: hidden;
+}
+
+#footer{padding: 20px 0;}
+#footer p, #footer ul, #footer a{padding: 0; font-weight: bold; list-style: none;}
+.footerLEFT{float: left; width: 300px; margin: 0 0 0 15px; padding: 0;}
+.footerRIGHT{float: right; width: 150px;}
+#footer li{margin-bottom: 3px;}
+#footer .last{margin: 0;}
+#footerr {
+  overflow: hidden;
+}
+
+.moveParkingHOME {
+  position: absolute;
+  left: 155px;
+  top: 1269px;
+}
+
+.moveParkingPARKING_LOTS {
+  position: absolute;
+  left: 155px;
+  top: 1125px;
+}
+
+.moveParkingFAQS {
+  position: absolute;
+  left: 155px;
+  top: 1015px;
+}
+
+.moveCarPic {
+    position: absolute;
+    left: 350px;
+    down: 550px;
+}
+#newsletter{display: block; float: left; width: 300px;}
+
+.changeText{
+  font-style: italic;
+}
+
+.editTwitterIcons{
+  position: absolute;
+  top: 77px;
+  right: 0px;
+}
+
+.editFacebookIcons{
+  position: absolute;
+  top: 107px;
+  right: 0px;
+}
+
+.editInstagramIcons{
+  position: absolute;
+  top: 139px;
+  right: 0px;
+}
+
+.editSnapchatIcons{
+  position: absolute;
+  top: 172px;
+  right: 0px;
+}
